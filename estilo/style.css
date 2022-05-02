@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+body {
+    background-color: #EDE8E8;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo-titulo > p {
+    text-align: left;
+    font: normal 500 19px 'Work sans';
+    color: #1c1e21d3;
+    width: 380px;
+    margin: 0px;
+    margin-left: 45px;
+}
+
+.conteudo-titulo  img {
+    width: 380px;
+    height: 100px;
+}
+
+.div-container {
+    background-color: white;
+    width: 423px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+}
+
+.div-inputs {
+    padding: 10px 0px 20px 0px;
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.div-inputs > input {
+    box-sizing: border-box;
+
+    margin: 10px 0px;
+    width: 367px;
+    height: 57px;
+    background: #E2DDDD;
+    border-radius: 8px;
+    border: none;
+    text-indent: 3px;
+    outline-color: rgba(77, 70, 70, 0.281);
+    color: rgba(0, 0, 0, 0.801);
+    font: normal 500 15px 'work sans';
+}
+
+.div-inputs > input:active {
+    box-shadow: rgba(0, 0, 0, 0.027) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+}
+
+.div-inputs > input::placeholder {
+    padding: 20px 136px 14px 1px;
+    font: normal 500 15px 'work sans';
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.button1 {
+    box-sizing: border-box;
+    width: 367px;
+    height: 57px;
+    
+    margin: 10px 0px;
+    color: white;
+    font: normal 500 20px 'Work sans';
+    text-align: center;
+
+    background-color: rgba(5, 68, 192, 0.82);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: rgba(5, 67, 192, 0.877) ;
+}
+
+.button1:active {
+    background: rgba(5, 67, 192, 0.473);
+}
+
+label {
+    font: normal 400 15px 'Work Sans';
+    color: #2B70F5;
+}
+
+label:hover {
+    text-decoration: underline;
+    color: #2B70F5;
+    cursor: pointer;
+}
+
+hr {
+    width: 370px;
+    height: .5px;
+    background-color: #0000006b;
+
+    border: none;
+}
+
+.button2 {
+    width: 219px;
+    height: 62px;
+    color: white;
+    font: normal 500 20px 'Work sans';
+    
+    background-color: #2DCC50;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: #2dc74e;
+}
+
+.button2:active {
+    background-color: #45ce63 ;
+}
+
+@media (max-width: 910px) {
+
+    main {
+        flex-direction: column;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .conteudo-titulo {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .conteudo-titulo > p {
+        text-align: center;
+        margin: 0;
+    }
+}
